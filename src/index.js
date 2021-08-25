@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import IndexHeader from "./components/IndexHeader";
+import {Login} from "./components/Login/Login";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <IndexHeader/>,
+    <Login/>,
   document.getElementById('root')
 );
 
