@@ -12,12 +12,12 @@ export const Login = () => {
             <div>
               <h1 className={styles.title}>NOTAS UPTC</h1>
               <div className={styles.contInputs}>
-                <label>Correo</label>
-                <input type="text"/>
+                <label className={styles.label}>Correo</label>
+                <input className={styles.input} type="text"/>
               </div>
               <div className={styles.contInputs}>
-                <label>Contraseña</label>
-                <input type="text"/>
+                <label className={styles.label}>Contraseña</label>
+                <input className={styles.input} type="text" />
               </div>
               <div>
                 <button type="submit">Enviar</button>

@@ -17,3 +17,12 @@
     grid-template-rows: auto;
     grid-gap: 1rem;
 }
+
+.input{
+    border-radius: 2px;
+}
+.label{
+    font-family: 'Courier New', Courier, monospace;
+    size: 15px;
+    color: blueviolet;
+}
