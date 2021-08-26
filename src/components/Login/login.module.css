@@ -1,7 +1,10 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'IBM Plex Serif', serif;
+/**body{
+    display: grid; 
+    grid-template-columns:  1fr 1fr; 
+
+    margin: 30px;
+    justify-items: center;
+    grid-gap: 0.7rem;
 }
 
 h1{
@@ -19,5 +22,16 @@ h1{
     flex: 1;
 }
 .login{
+    align-content: center;
     flex: 1;
 }
+
+.input{
+
+	width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(163, 40, 40);
+}**/
+
