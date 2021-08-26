@@ -1,3 +1,19 @@
-
-
-
+.info{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 30px;
+    justify-items: center;
+    grid-gap: 0.5rem;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+}
+.contInputs{
+    margin-top: 1rem;
+    display: grid; 
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}

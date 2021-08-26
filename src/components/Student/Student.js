@@ -1,10 +1,10 @@
 import React from 'react'
+import styles from './login.module.css'
 
 const Student = () => {
     return (
-        <div>
-            <h1>Hola</h1>
-        </div>
+        <div className={styles.loginInfo}>
+            <h1>Hola</h1>        </div>
     )
 }
 
