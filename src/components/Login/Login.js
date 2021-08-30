@@ -1,5 +1,6 @@
 import styles from "./login.module.css";
 import React from "react";
+import Footer from "../components/Footer/footer"; 
 import image from './logo-recortado.png'; 
 
 

@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #264653;
+    text-align: center;
+}
+
+.rate{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 .8rem;
+}
