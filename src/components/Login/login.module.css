@@ -9,9 +9,12 @@
 .title{
     text-align: center;
     font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: brown;
 }
 .contInputs{
+    width: 260px;
+    height: 70px;
     margin-top: 1rem;
     display: grid; 
     grid-template-rows: auto;
@@ -23,14 +26,15 @@
     border-radius: 2px;
 }
 .label{
-    font-family: 'Courier New', Courier, monospace;
-    size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
     color: blueviolet;
 }
 
 .btn{
     width: 100px;
     height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 4px;
     background-color: cadetblue;
     color: aliceblue;
