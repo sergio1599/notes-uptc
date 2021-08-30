@@ -2,6 +2,7 @@ import styles from "./login.module.css";
 import React from "react";
 
 
+
 export const Login = () => {
   return (
         <div className={styles.info}>
@@ -19,7 +20,7 @@ export const Login = () => {
                 <input className={styles.input} type="text" />
               </div>
               <div className={styles.contSubmit}>
-                <div>
+                <div className={styles.chkLbl}>
                   <input className={styles.checkbox} type="checkbox"></input>
                   <label className={styles.label}>   Recordarme</label>
                 </div>
@@ -35,3 +36,5 @@ export const Login = () => {
      
   );
 };
+
+export default Login;
