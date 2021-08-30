@@ -18,8 +18,15 @@ export const Login = () => {
                 <label className={styles.label}>Contraseña</label>
                 <input className={styles.input} type="text" />
               </div>
-              <div>
-                <button type="submit" className={styles.btn}>Enviar</button>
+              <div className={styles.contSubmit}>
+                <div>
+                  <input className={styles.checkbox} type="checkbox"></input>
+                  <label className={styles.label}>   Recordarme</label>
+                </div>
+                <div>
+                  <button type="submit" className={styles.btn}>Enviar</button>
+                </div>
+                
               </div>
           </div>
             
