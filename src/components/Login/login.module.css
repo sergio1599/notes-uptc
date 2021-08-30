@@ -48,6 +48,12 @@
     background-color: gray;
     color: aliceblue;
 }
+.btn:hover{
+    background-color: rgb(212, 212, 212);
+    color: black;
+    transition: background-color 1s;
+    transition: color 1s;
+}
 
 .checkbox{
     width: 18px;

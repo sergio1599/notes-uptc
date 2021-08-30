@@ -1,7 +1,6 @@
-import React from 'react'
 import styles from './footer.module.css';
 
-const footer = () => {
+export const Footer = () => {
     return (
         <div className={styles.footer}>
             <footer>
@@ -10,7 +9,7 @@ const footer = () => {
                 </div>
             </footer>     
         </div>
-    )
-}
+    );
+}; 
 
-export default footer; 
+export default Footer; 

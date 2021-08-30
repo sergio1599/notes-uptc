@@ -1,5 +1,5 @@
 import styles from "./login.module.css";
-import Footer from "../Footer/Footer";
+
 
 
 export const Login = () => {
@@ -28,9 +28,7 @@ export const Login = () => {
                 </div>
               </div>
           </div>   
-        </div>
-        
-     
+        </div>  
   );
 };
 
