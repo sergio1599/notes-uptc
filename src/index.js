@@ -8,10 +8,8 @@ import reportWebVitals from './reportWebVitals';
 const Home=()=>{
   return(<>
     <Login/>
-    <div className={'styles.fot'}>
-      <Footer/> 
-    </div>
-</>);
+    <Footer/> 
+  </>);
 }
 
 ReactDOM.render(
