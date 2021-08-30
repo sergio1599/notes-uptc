@@ -1,17 +1,12 @@
 import styles from "./login.module.css";
-import React from "react";
-import Footer from "../components/Footer/footer"; 
-import image from './logo-recortado.png'; 
-
-
-
+import Footer from "../Footer/Footer";
 
 
 export const Login = () => {
   return (
         <div className={styles.info}>
             <div className={styles.contImage}>
-              <img src={image} alt=""/>
+              <img src={"/images/logo-recortado.png"} alt=""/>
             </div>
             <div>
               <h1 className={styles.title}>NOTAS UPTC</h1>
@@ -31,12 +26,10 @@ export const Login = () => {
                 <div>
                   <button type="submit" className={styles.btn}>Enviar</button>
                 </div>
-                
               </div>
-          </div>
-            
-            
+          </div>   
         </div>
+        
      
   );
 };
