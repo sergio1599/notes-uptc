@@ -1,6 +1,6 @@
 import styles from "./login.module.css";
 import React from "react";
-import { Button } from "bootstrap";
+
 
 
 export const Login = () => {
@@ -20,13 +20,12 @@ export const Login = () => {
                 <input className={styles.input} type="text" />
               </div>
               <div>
-                <button type="submit">Enviar</button>
+                <button type="submit" className={styles.btn}>Enviar</button>
               </div>
           </div>
             
             
         </div>
-        
-        
+     
   );
 };
