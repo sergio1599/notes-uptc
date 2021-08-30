@@ -22,7 +22,7 @@
 }
 
 .input{
-    border-radius: 2px;
+    border-radius: 7px;
     width: 250px;
     height: 30px;
 }
@@ -53,4 +53,12 @@
     width: 18px;
     height: 18px;
     margin-bottom: 15px;
+}
+
+
+.contImage{
+    margin: auto;
+}
+.contImage img{
+    width: 200px;
 }

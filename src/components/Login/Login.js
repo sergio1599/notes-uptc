@@ -1,13 +1,16 @@
 import styles from "./login.module.css";
 import React from "react";
+import image from './logo-recortado.png'; 
+
+
 
 
 
 export const Login = () => {
   return (
         <div className={styles.info}>
-            <div>
-              <h1>Imagen</h1>
+            <div className={styles.contImage}>
+              <img src={image} alt=""/>
             </div>
             <div>
               <h1 className={styles.title}>NOTAS UPTC</h1>
