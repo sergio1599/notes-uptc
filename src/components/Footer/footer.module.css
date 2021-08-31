@@ -10,7 +10,7 @@
 .rate{
     margin: 0 auto;
     max-width: 960px; 
-    height: 100px;
+    height: 90px;
     padding: 0 .8rem;
 }
 
@@ -20,3 +20,17 @@
     grid-gap: 1rem;
     justify-content: center;
 } 
+
+.text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.git:hover,
+.instagram:hover,
+.linkedin:hover{
+    background-color: #2a9d8f;
+    transition: background-color 0.5s;
+    border-radius: 12px;
+}

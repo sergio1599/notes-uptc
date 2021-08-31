@@ -23,7 +23,9 @@ export const Login = () => {
                   <label className={styles.label}>   Recordarme</label>
                 </div>
                 <div>
-                  <button type="submit" className={styles.btn}>Enviar</button>
+                  <form action="/student">
+                    <input type="submit" className={styles.btn} value="Enviar"/>
+                  </form>   
                 </div>
               </div>
           </div>   
