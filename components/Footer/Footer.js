@@ -1,5 +1,5 @@
-import React from "react";
-import styles from './footer.module.css';
+import React from 'react'
+import styles from './footer.module.css'; 
 import Icon from '@mdi/react';
 import {mdiGithub,mdiLinkedin, mdiInstagram} from '@mdi/js';
 
@@ -10,9 +10,8 @@ const FooterCards = (props) => {
     />);
 }
 
+const Footer = () => {
 
-export const Footer = () => {
-    
     let gitHub = <FooterCards path={mdiGithub} size={1.6} color={"#ffff"}/>
     let instagram = <FooterCards path={mdiInstagram} size={1.6} color={"#ffff"}/>
     let linkedin = <FooterCards path={mdiLinkedin} size={1.6} color={"#ffff"}/>
@@ -41,4 +40,4 @@ export const Footer = () => {
     );
 }; 
 
-export default Footer; 
+export default Footer
