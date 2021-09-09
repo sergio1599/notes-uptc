@@ -17,13 +17,19 @@ const FooterUser = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.elements}>
-                <div className={styles.containerInp}>
-                    <div className={styles.containerAddon}>
-                        <i title={fileFind}>{fileFind}</i>
-                    </div>
-
-                    <input type="text" className="containerInput"/>
+                <div>
+                    
                 </div>
+                <div>
+                    <div className={styles.containerInp}>
+                        <div className={styles.containerAddon}>
+                            <i title={fileFind}>{fileFind}</i>
+                        </div>
+
+                        <input type="text" className="containerInput"/>
+                    </div>
+                </div>
+                
             </div>
             
         </div>
