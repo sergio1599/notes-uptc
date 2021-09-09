@@ -17,8 +17,8 @@ const FooterUser = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.elements}>
-                <div>
-                    
+                <div className={styles.containerP}>
+                    <p className={styles.p}>Notas UPTC</p>
                 </div>
                 <div>
                     <div className={styles.containerInp}>
