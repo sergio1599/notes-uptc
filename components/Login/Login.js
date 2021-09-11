@@ -10,11 +10,11 @@ const Login = ({}) =>{
             <h1 className={styles.title}>NOTAS UPTC</h1>
             <div className={styles.contInputs}>
                 <label className={styles.label}>Correo</label>
-                <input className={styles.input} type="text"/>
+                <input className={styles.input} placeholder="Escribe tu correo" type="text" />
             </div>
             <div className={styles.contInputs}>
                 <label className={styles.label}>Contraseña</label>
-                <input className={styles.input} type="text" />
+                <input className={styles.input} placeholder="Escribe tu contraseña" type="text" />
             </div>
             <div className={styles.contSubmit}>
                 <div className={styles.chkLbl}>
