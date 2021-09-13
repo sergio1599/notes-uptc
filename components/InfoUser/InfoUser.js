@@ -3,8 +3,9 @@ import styles from './infoUser.module.css'
 
 const InfoUser = () => {
     return (
-        <div>
-            
+        <div className={styles.info}>
+            <div>Hola</div>
+            <div>Hola</div>
         </div>
     )
 }
