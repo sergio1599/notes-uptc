@@ -6,10 +6,22 @@ const InfoUser = () => {
         <div className={styles.info}>
             <div className={styles.sideBar}>
                   <img className={styles.profilePic} src={"/images/profile.jpg"}/>
-                  <button className={styles.buttons}>Notas</button>
-                  <button className={styles.buttons}>Archivos</button>
-                  <button className={styles.buttons}>Favoritos</button>
-                  <button className={styles.confBtn}>Configuración</button>
+                  <a>
+                    <button className={styles.buttons}>Notas</button>
+                  </a>
+                  <a>
+                    <button className={styles.buttons}>Archivos</button>
+                  </a>
+                  <a>
+                    <button className={styles.buttons}>Favoritos</button>
+                  </a>
+                  <div className={styles.contImage}>
+                    <img  src={"/images/logo-recortado.png"}/>
+                  </div>
+                  <a>
+                    <button className={styles.confBtn}>Configuración</button>
+                  </a>
+                  
             </div>
             <div>Hola</div>
         </div>

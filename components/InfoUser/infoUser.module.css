@@ -1,20 +1,22 @@
 .info{
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 300px auto;
     grid-gap: 0.3rem;
 }
 
 .sideBar{
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    align-items: center;
+    height: 88vh;
+    background-color: cadetblue;
 }
 
 .profilePic{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +26,6 @@
 .buttons{
     width: 150px;
     height: 40px;
-    margin-top: 10px;
     border: 1rem;
     border-radius: 1rem;
 }
@@ -37,3 +38,10 @@
     border-radius: 1rem;
 }
 
+.contImage img{
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 80px;
+    
+}

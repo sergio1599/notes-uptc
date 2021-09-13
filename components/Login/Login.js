@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 import styles from "./login.module.css"
 const Login = ({}) =>{
     return (
@@ -19,12 +19,10 @@ const Login = ({}) =>{
             <div className={styles.contSubmit}>
                 <div className={styles.chkLbl}>
                   <input className={styles.checkbox} type="checkbox"></input>
-                  <label className={styles.label}>   Recordarme</label>
+                  <label className={styles.label}>Recordarme</label>
                 </div>
-                <div>
-                  <form action="/student">
-                    <input type="submit" className={styles.btn} value="Enviar"/>
-                  </form>   
+                <div> 
+                  <Link href={"./user"}><a className={styles.btn}>Enviar</a></Link>
                 </div>
             </div>
         </div>
