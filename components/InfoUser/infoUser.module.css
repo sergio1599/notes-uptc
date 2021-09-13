@@ -24,19 +24,32 @@
 }
 
 .buttons{
-    width: 150px;
-    height: 40px;
-    border: 1rem;
-    border-radius: 1rem;
+    width: 180px;
+    height: 55px;
+    /*background: none;*/
+    border: 1px ;
+    border-radius: 20px;
+    font: inherit;
 }
 
 .confBtn{
     width: 100px;
-    height: 25px;
+    height: 35px;
     margin-top: 10px;
     border: 1rem;
     border-radius: 1rem;
 }
+
+.buttons:hover,
+.confBtn:hover {
+    background-color: rgb(212, 212, 212);
+    color: black;
+    transition: background-color 2s;
+    transition: color 2s;
+
+}
+
+
 
 .contImage img{
     display: grid;
