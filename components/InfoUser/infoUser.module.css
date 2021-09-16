@@ -1,7 +1,6 @@
 .info{
     display: grid;
     grid-template-columns: 300px auto;
-    grid-gap: 0.3rem;
 }
 
 .sideBar{
@@ -49,12 +48,20 @@
 
 }
 
-
-
 .contImage img{
     display: grid;
     margin-top: 20px;
     margin-bottom: 15px;
     width: 80px;
     
+}
+
+.keepGrid{
+    display: grid; 
+    grid-gap: 0.5rem; 
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
 }

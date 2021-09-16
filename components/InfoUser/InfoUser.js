@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './infoUser.module.css'
+import Keep from '../Keep/Keep'
 
 const InfoUser = () => {
     return (
@@ -14,7 +15,39 @@ const InfoUser = () => {
                   </div>
                   <button className={styles.confBtn}>Configuración</button>
             </div>
-            <div>Hola</div>
+            <div className={styles.keepGrid}>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                <div>
+                    <Keep/>
+                </div>
+                
+            </div>
         </div>
     )
 }
