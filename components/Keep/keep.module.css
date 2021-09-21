@@ -1,8 +1,39 @@
-.content{
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+
+.cards_item {
+    
+    flex-basis: 25%;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*notas*/
+.keep {
+    display: flex;
+    flex-direction: column;
     width: 250px;
-    height: 160px;
-    background-color: darkcyan;
+    height: 190px;
+    background-color: cadetblue;
+    align-items: center;
     border-radius: 5px;
 }
 
+.keep_cover {
+    height: 150px;
+    width: 100%;
+    align-items: center;
 
+}
+
+.keep_content {
+    /* Take available height */
+    flex: 1;
+}

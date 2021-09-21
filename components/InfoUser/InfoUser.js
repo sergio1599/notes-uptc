@@ -17,36 +17,17 @@ const InfoUser = () => {
             </div>
             <div className={styles.keepGrid}>
                 <div>
-                    <Keep/>
+                    <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
                 </div>
                 <div>
-                    <Keep/>
+                    <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
                 </div>
                 <div>
-                    <Keep/>
+                    <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
                 </div>
                 <div>
-                    <Keep/>
+                    <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
                 </div>
-                <div>
-                    <Keep/>
-                </div>
-                <div>
-                    <Keep/>
-                </div>
-                <div>
-                    <Keep/>
-                </div>
-                <div>
-                    <Keep/>
-                </div>
-                <div>
-                    <Keep/>
-                </div>
-                <div>
-                    <Keep/>
-                </div>
-                
             </div>
         </div>
     )

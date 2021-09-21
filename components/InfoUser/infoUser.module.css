@@ -58,7 +58,8 @@
 
 .keepGrid{
     display: grid; 
-    grid-gap: 0.5rem; 
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
     grid-template-columns: repeat(4, auto);
     justify-items: center;
     align-items: center;
