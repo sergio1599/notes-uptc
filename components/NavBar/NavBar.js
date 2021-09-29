@@ -25,8 +25,7 @@ const FooterUser = () => {
                         <div className={styles.containerAddon}>
                             <i title={fileFind}>{fileFind}</i>
                         </div>
-
-                        <input type="text" className="containerInput"/>
+                        <input type="search" placeholder="Buscar" className={styles.containerInput}/>
                     </div>
                 </div>
                 

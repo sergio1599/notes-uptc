@@ -14,7 +14,7 @@ const Login = ({}) =>{
             </div>
             <div className={styles.contInputs}>
                 <label className={styles.label}>Contraseña</label>
-                <input className={styles.input} placeholder="Escribe tu contraseña" type="text" />
+                <input className={styles.input} placeholder="Escribe tu contraseña" type="password" />
             </div>
             <div className={styles.contSubmit}>
                 <div className={styles.chkLbl}>
