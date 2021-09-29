@@ -1,19 +1,36 @@
 import React from 'react'
 import styles from './infoUser.module.css'
 import Keep from '../Keep/Keep'
+import Link from 'next/link'
 
 const InfoUser = () => {
     return (
         <div className={styles.info}>
             <div className={styles.sideBar}>
-                  <img className={styles.profilePic} src={"/images/profile.jpg"}/>
-                  <button className={styles.buttons}>Notas</button>
-                  <button className={styles.buttons}>Archivos</button>
-                  <button className={styles.buttons}>Favoritos</button>
-                  <div className={styles.contImage}>
-                    <img  src={"/images/logo-recortado.png"}/>
-                  </div>
-                  <button className={styles.confBtn}>Configuración</button>
+                <img className={styles.profilePic} src={"/images/profile.jpg"}/>
+                <Link href={"./"}>
+                    <a className={styles.buttons}>Notas</a>
+                </Link>
+
+                <Link href={"./"}>
+                    <a className={styles.buttons}>Archivos</a>
+                </Link>
+
+                <Link href={"./"}>
+                    <a className={styles.buttons}>Favoritos</a>
+                </Link>
+
+                <div className={styles.contImage}>
+                    <img src={"/images/logo-recortado.png"}/>
+                </div>
+                <Link href={"./"}>
+                    <a className={styles.confBtn}>Configuración</a>
+                </Link>
+                <Link href={"./"}>
+                    <a className={styles.confBtn}>Salir</a>
+                </Link>
+
+
             </div>
             <div className={styles.keepGrid}>
                 <div>

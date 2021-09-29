@@ -23,20 +23,29 @@
 }
 
 .buttons{
+    display: grid;
+    justify-items: center;
+    align-items: center;
     width: 180px;
     height: 55px;
-    /*background: none;*/
     border: 1px ;
     border-radius: 20px;
+    background: rgb(212, 212, 212);
     font: inherit;
 }
 
 .confBtn{
+    display: grid;
+    justify-items: center;
+    align-items: center;
     width: 100px;
-    height: 35px;
+    height: 40px;
     margin-top: 10px;
     border: 1rem;
     border-radius: 1rem;
+    background: rgb(212, 212, 212);
+    font-size: 13px;
+
 }
 
 .buttons:hover,
