@@ -23,6 +23,7 @@
 
 .input{
     border-radius: 7px;
+    border: 1px solid;
     width: 250px;
     height: 30px;
 }
@@ -35,7 +36,6 @@
 .contSubmit{
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-columns: 1fr;
 }
 
