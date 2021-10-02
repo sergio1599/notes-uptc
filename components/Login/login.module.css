@@ -1,3 +1,4 @@
+
 .info{
     display: grid;
     grid-template-columns:  1fr 1fr;
@@ -5,7 +6,6 @@
     margin: 30px;
     justify-items: center;
     grid-gap: 0.5rem;
-    
 }
 .title{
     text-align: center;
@@ -38,10 +38,16 @@
     display: grid;
     grid-template-columns: 1fr;
 }
+.contBtn{
+    margin-top: 0.5rem;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+}
 
 .btn{
     padding: 10px 24px;
-    border-radius: 0.3rem;;
+    margin: 10px auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 4px;
     font-size: 16px;

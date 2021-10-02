@@ -18,7 +18,6 @@ const Register = ({}) => {
                 <option>Usuario</option>
                 <option>Administrador</option>
             </select>
-
         </div>
     );
 };
