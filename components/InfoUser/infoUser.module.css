@@ -32,6 +32,7 @@
     border-radius: 20px;
     background: rgb(212, 212, 212);
     font: inherit;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .confBtn{
@@ -45,6 +46,7 @@
     border-radius: 1rem;
     background: rgb(212, 212, 212);
     font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
 
 }
 

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:40px auto;
+    margin:10px auto;
 }
 
 .select {
@@ -11,21 +11,26 @@
     border-radius: 7px;
     border:1px solid;
     height:30px;
-    width: 230px;
+    width: 250px;
     overflow: hidden;
     position:relative;
 }
-
+.label{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
 .input{
     border-radius: 7px;
     border: 1px solid;
     width: 250px;
     height: 30px;
-    margin:10px auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
 }
 .title{
     text-align: center;
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: darkolivegreen;
 }

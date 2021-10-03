@@ -5,6 +5,7 @@ const Login = ({}) => {
     const value = true;
     return (
         <div className={styles.info}>
+
             <div className={styles.contImage}>
                 <img src={"/images/logo-recortado.png"}/>
             </div>
