@@ -1,14 +1,17 @@
 import Link from 'next/link'
 import styles from "./login.module.css"
 import {useForm} from '../../hooks/useForm';
+import {SessionContext} from "../../providers/sessionContext";
+import {useContext} from "react";
 
 const Login = ({}) => {
     const value = true;
+    const {session, setSession} = useContext(SessionContext);
     const [formLoginValues, handleLoginInputChange] = useForm({
         username: '',
         password: ''
     })
-    const handleSubmit= async (e)=>{
+    const handleSubmit = async (e) => {
         console.log(formLoginValues.username, formLoginValues.password);
         let userName = formLoginValues.username;
         let password = formLoginValues.password;
@@ -20,10 +23,21 @@ const Login = ({}) => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    username:formLoginValues.username,
-                    password:formLoginValues.password
+                    username: formLoginValues.username,
+                    password: formLoginValues.password
                 })
-            }).then(response=> response.json()).then(data=>{console.log(data)})
+            }).then(response => response.json()).then(data => {
+            console.log(data);
+            setSession({
+                id : data._id,
+                username : data.username,
+                name : data.name,
+                password : data.password,
+                lastName : data.lastName,
+                mail : data.mail,
+                type : data.type,
+            });
+        })
     }
     return (
         <div className={styles.info}>
@@ -49,11 +63,11 @@ const Login = ({}) => {
                     </div>
                     <div className={styles.contBtn}>
                         <div>
-                            <Link href={"./user"}><a type={'onSubmit'} onClick={handleSubmit} className={styles.btn}>Enviar</a></Link>
+                            <button type={'onSubmit'} onClick={handleSubmit} className={styles.btn}>Enviar</button>
                         </div>
                         <hr className={"solid"}/>
                         <div>
-                            <Link href={"./user"}><a className={styles.btn}>Crear usuario</a></Link>
+                            <Link href={"/user"}><a className={styles.btn}>Crear usuario</a></Link>
                         </div>
                     </div>
 

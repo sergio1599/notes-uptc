@@ -1,9 +1,26 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styles from './infoUser.module.css'
 import Keep from '../Keep/Keep'
 import Link from 'next/link'
+import { SessionContext } from "../../providers/sessionContext";
+
+
 
 const InfoUser = () => {
+
+    const {session, setSession} = useContext(SessionContext);
+    let id = session.id;
+    let userName = session.username;
+    let name = session.name;
+    let password = session.password;
+    let lastName = session.lastname;
+    let mail = session.mail;
+    let role = session.type;
+    if (role === 'admin'){
+        role = 'Administrador';
+    } else {
+        role = 'Docente';
+    }
     return (
         <div className={styles.info}>
             <div className={styles.sideBar}>
