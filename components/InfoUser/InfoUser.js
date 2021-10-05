@@ -10,6 +10,9 @@ import NavBar from "../NavBar/NavBar";
 const InfoUser = () => {
 
     const {session, setSession} = useContext(SessionContext);
+    if  (!session){
+        return null
+    }
     let id = session.id;
     let userName = session.username;
     let name = session.name;
