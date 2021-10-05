@@ -3,6 +3,7 @@ import styles from "./login.module.css"
 import {useForm} from '../../hooks/useForm';
 import {SessionContext} from "../../providers/sessionContext";
 import {useContext} from "react";
+import swal from 'sweetalert';
 
 const Login = ({}) => {
     const value = true;
@@ -16,28 +17,43 @@ const Login = ({}) => {
         let userName = formLoginValues.username;
         let password = formLoginValues.password;
         e.preventDefault();
-        fetch(`https://apirestful-notes-uptc.herokuapp.com/sign-in?username=${userName}&password=${password}`,
-            {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    username: formLoginValues.username,
-                    password: formLoginValues.password
-                })
-            }).then(response => response.json()).then(data => {
-            console.log(data);
-            setSession({
-                id : data._id,
-                username : data.username,
-                name : data.name,
-                password : data.password,
-                lastName : data.lastName,
-                mail : data.mail,
-                type : data.type,
-            });
-        })
+        if (userName === ''|| password ===''){
+            swal({
+                title: "No ingresado datos!",
+                text: "Ingrese los datos!",
+                icon: "error"
+            })
+        }else{
+            fetch(`https://apirestful-notes-uptc.herokuapp.com/sign-in?username=${userName}&password=${password}`,
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        username: formLoginValues.username,
+                        password: formLoginValues.password
+                    })
+                }).then(response => response.json()).then(data => {
+                console.log(data);
+                if(data.mensaje === "Incorrect password"|| data.mensaje === 'Non-existent user'){
+                    swal({
+                        title: "Usuario o contraseña incorrecta!",
+                        text: "Puede que esté ingrensando mal sus datos, o que no esté registrado!",
+                        icon: "error"
+                    })
+                }
+                setSession({
+                    id : data._id,
+                    username : data.username,
+                    name : data.name,
+                    password : data.password,
+                    lastName : data.lastName,
+                    mail : data.mail,
+                    type : data.type,
+                });
+            })
+        }
     }
     return (
         <div className={styles.info}>
@@ -57,9 +73,6 @@ const Login = ({}) => {
                            type="password" value={formLoginValues.password} onChange={handleLoginInputChange}/>
                 </div>
                 <div className={styles.contSubmit}>
-                    <div className={styles.chkLbl}>
-                        <label className={styles.label}>Recordarme</label>
-                    </div>
                     <div className={styles.contBtn}>
                         <div>
                             <button type={'onSubmit'} onClick={handleSubmit} className={styles.btn}>Enviar</button>

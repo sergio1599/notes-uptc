@@ -1,7 +1,7 @@
 import Login from '../components/Login/Login'
 import Footer from '../components/Footer/Footer'
 import Register from "../components/Register/Register";
-import { SessionContext} from "../providers/sessionContext";
+import {SessionContext} from "../providers/sessionContext";
 import InfoUser from "../components/InfoUser/InfoUser";
 import {useState} from 'react';
 import NavBar from "../components/NavBar/NavBar";
@@ -13,7 +13,7 @@ export default function Home({data}) {
 
         <SessionContext.Provider value={{session, setSession}}>
             {
-                !session.username ? <Login/> :<InfoUser/>
+                !session.username ? <Login/> : <InfoUser/>
             }
             <Footer/>
         </SessionContext.Provider>
