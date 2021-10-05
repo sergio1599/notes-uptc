@@ -12,7 +12,7 @@ const NavbarCards = (props) => {
 
 
 const NavBar = () => {
-    let fileFind = <NavbarCards path={mdiMagnify } size={1} color={"#ffff"}/>
+    let fileFind = <NavbarCards path={mdiMagnify} size={1} color={"#ffff"}/>
     return (
         <div className={styles.navbar}>
             <div className={styles.elements}>
@@ -27,9 +27,7 @@ const NavBar = () => {
                         <input type="search" placeholder="Buscar" className={styles.containerInput}/>
                     </div>
                 </div>
-                
             </div>
-            
         </div>
     )
 }

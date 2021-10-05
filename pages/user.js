@@ -5,7 +5,7 @@ import InfoUser from '../components/InfoUser/InfoUser'
 export default function Home() {
   return (
     <>
-        {/*<NavBar/>*/}
+        <NavBar/>
         <InfoUser/>
     </>
   )

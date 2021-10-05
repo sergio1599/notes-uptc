@@ -58,7 +58,6 @@ const Login = ({}) => {
                 </div>
                 <div className={styles.contSubmit}>
                     <div className={styles.chkLbl}>
-                        <input className={styles.checkbox} type="checkbox"></input>
                         <label className={styles.label}>Recordarme</label>
                     </div>
                     <div className={styles.contBtn}>
