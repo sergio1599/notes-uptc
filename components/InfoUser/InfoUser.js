@@ -3,6 +3,7 @@ import styles from './infoUser.module.css'
 import Keep from '../Keep/Keep'
 import Link from 'next/link'
 import { SessionContext } from "../../providers/sessionContext";
+import NavBar from "../NavBar/NavBar";
 
 
 
@@ -46,8 +47,6 @@ const InfoUser = () => {
                 <Link href={"./"}>
                     <a className={styles.confBtn}>Salir</a>
                 </Link>
-
-
             </div>
             <div className={styles.keepGrid}>
                 <div>

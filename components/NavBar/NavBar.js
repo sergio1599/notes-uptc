@@ -3,7 +3,7 @@ import styles from './navBar.module.css';
 import Icon from '@mdi/react';
 import {mdiMagnify } from '@mdi/js';
 
-const FooterCards = (props) => {
+const NavbarCards = (props) => {
     return (<Icon path={props.path}
                   size={props.size}
                   color={props.color}
@@ -11,8 +11,8 @@ const FooterCards = (props) => {
 }
 
 
-const FooterUser = () => {
-    let fileFind = <FooterCards path={mdiMagnify } size={1} color={"#ffff"}/>
+const NavBar = () => {
+    let fileFind = <NavbarCards path={mdiMagnify } size={1} color={"#ffff"}/>
 
     return (
         <div className={styles.navbar}>
@@ -35,4 +35,4 @@ const FooterUser = () => {
     )
 }
 
-export default FooterUser
+export default NavBar
