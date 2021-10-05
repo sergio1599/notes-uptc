@@ -4,11 +4,37 @@ import Keep from '../Keep/Keep'
 import Link from 'next/link'
 import { SessionContext } from "../../providers/sessionContext";
 import NavBar from "../NavBar/NavBar";
+import Login from "../Login/Login";
 
 
 
 const InfoUser = () => {
+    const leave = (e) =>{
 
+        swal({
+            title:"¿Cerrar sesión?",
+            icon:"warning",
+            buttons: true,
+        }).then((willDelete)=>{
+            if(willDelete){
+                window.location.href = "/"
+                swal({
+                    title: "Cerrando sesión",
+                    icon: "success",
+                    timer: 3000,
+                });
+
+            }else{
+                swal({
+                    title: "No se cerró la sesión",
+                    icon: "success",
+                    timer: 3000,
+                })
+            }
+        });
+
+
+    }
     const {session, setSession} = useContext(SessionContext);
     if  (!session){
         return null
@@ -51,8 +77,8 @@ const InfoUser = () => {
                     <Link href={"./"}>
                         <a className={styles.confBtn}>Configuración</a>
                     </Link>
-                    <Link href={"./"}>
-                        <a className={styles.confBtn}>Salir</a>
+                    <Link href={"/"}>
+                        <button onClick={leave} className={styles.confBtn}>Salir</button>
                     </Link>
                 </div>
                 <div className={styles.keepGrid}>
