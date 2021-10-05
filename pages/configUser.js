@@ -5,8 +5,8 @@ import Config from '../../components/Config/Config'
 export const configUser = () => {
     return (
         <div>
-            <NavBar/>
-            <Config/>
+            {/*<NavBar/>
+            <Config/>*/}
         </div>
     )
 }

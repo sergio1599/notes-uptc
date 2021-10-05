@@ -13,7 +13,6 @@ const NavbarCards = (props) => {
 
 const NavBar = () => {
     let fileFind = <NavbarCards path={mdiMagnify } size={1} color={"#ffff"}/>
-
     return (
         <div className={styles.navbar}>
             <div className={styles.elements}>
