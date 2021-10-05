@@ -4,10 +4,7 @@
     grid-template-rows: 1fr;
     justify-items: center;
     grid-gap: 0.5rem;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 14.5rem;
+    margin: 30px 30px 14.5rem 30px;
 }
 .title{
     text-align: center;
