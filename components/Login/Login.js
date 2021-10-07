@@ -79,7 +79,10 @@ const Login = ({}) => {
                         </div>
                         <hr className={"solid"}/>
                         <div>
-                            <Link href={"/user"}><a className={styles.btn}>Crear usuario</a></Link>
+                            <Link href={"/user"}>
+                                <button className={styles.btn}>Crear usuario</button>
+
+                            </Link>
                         </div>
                     </div>
 
