@@ -13,11 +13,9 @@ const Register = ({}) => {
             <input placeholder={"Escriba la contraseña"} className={styles.input}/>
             <label className={styles.label}>Correo</label>
             <input placeholder={"Escriba su correo"} className={styles.input}/>
-            <label className={styles.label}>¿Que tipo de usuario va a ser?</label>
-            <select className={styles.select}>
-                <option>Usuario</option>
-                <option>Administrador</option>
-            </select>
+            <div>
+                <button type={'onSubmit'}  className={styles.btn}>Enviar</button>
+            </div>
         </div>
     );
 };
