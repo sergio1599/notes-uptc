@@ -4,8 +4,6 @@ import Register from "../components/Register/Register";
 import {SessionContext} from "../providers/sessionContext";
 import InfoUser from "../components/InfoUser/InfoUser";
 import {useState} from 'react';
-import NavBar from "../components/NavBar/NavBar";
-
 export default function Home({data}) {
     const [session, setSession] = useState({});
     const value = true;
@@ -16,6 +14,7 @@ export default function Home({data}) {
                 !session.username ? <Login/> : <InfoUser/>
             }
             <Footer/>
+            <Register/>
         </SessionContext.Provider>
 
     </>);

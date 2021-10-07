@@ -64,7 +64,7 @@ const Login = ({}) => {
                 <h1 className={styles.title}>NOTAS UPTC</h1>
                 <div className={styles.contInputs}>
                     <label className={styles.label}>Usuario</label>
-                    <input name={'username'} className={styles.input} placeholder="Escribe tu correo" type="text"
+                    <input name={'username'} className={styles.input} placeholder="Escribe tu usuario" type="text"
                            value={formLoginValues.username} onChange={handleLoginInputChange}/>
                 </div>
                 <div className={styles.contInputs}>

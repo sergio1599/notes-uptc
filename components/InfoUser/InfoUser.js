@@ -53,53 +53,9 @@ const InfoUser = () => {
         role = 'Docente';
     }
 
-    //agregar notas
-    /*const {notes, setNotes} = userContext(SessionContext);
-    const [formNotesValues, handleNotessInputChange] = useForm({
-        userid: '',
-        name: '',
-        text: '',
-        namefile: '',
-        type: '',
-    })
-    if (!notes) {
-        return null
-    }
-
-    const handleSubmit = async (e) => {
-        let userId = '';
-        let name = formNotesValues.name;
-        let text = formNotesValues.text;
-        let nameFile = formNotesValues.namefile;
-        let type = formNotesValues.type;
-        e.preventDefault();
-        if (name === '' || text === '' || type === '') {
-            swal({
-                title: "Ingrese todos los datos!",
-                text: "Ingrese los datos!",
-                icon: "error"
-            })
-        } else {
-            fetch(``,
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        userId: '',
-                        name: formNotesValues.name,
-                        text: formNotesValues.text,
-                        nameFile: formNotesValues.namefile,
-                        type: formNotesValues.type,
-                    })
-                })
-        }
-
-    }*/
-
-
     return (
+
+
         <div>
             <div>
                 <NavBar/>
@@ -131,16 +87,16 @@ const InfoUser = () => {
                 </div>
                 <div className={styles.keepGrid}>
                     <div>
-                        <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
+                        <Keep title={'Ropa'} image={'Tengo que lavar la ropa'} content={'lavar la ropa'}/>
                     </div>
                     <div>
-                        <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
+                        <Keep title={'Calculo'} image={'Mañana tengo que estudiar para el parcial de cálculo'} content={'Estudiar pal parcial'}/>
                     </div>
                     <div>
-                        <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
+                        <Keep title={'Fisica'} image={'Prensentar el proyecto de física'} content={'Viernes 13'}/>
                     </div>
                     <div>
-                        <Keep title={'Titulo'} image={'acá debería ir una imagen'} content={'contenido'}/>
+                        <Keep title={'Titulo'} image={''} content={'contenido'}/>
                     </div>
                 </div>
             </div>
