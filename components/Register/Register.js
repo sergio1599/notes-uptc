@@ -61,7 +61,7 @@ const Register = ({}) => {
                         formUserValues.mail='';
                         swal({
                             title: "Muy bien!",
-                            text: "El usuario se ha creado correctamente!",
+                            text: `El usuario ${username} se ha creado correctamente!`,
                             icon: "success"
                         })
                     }

@@ -14,7 +14,7 @@ export default function Home({data}) {
                 !session.username ? <Login/> : <InfoUser/>
             }
             <Footer/>
-            
+
         </SessionContext.Provider>
 
     </>);
